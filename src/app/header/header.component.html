@@ -1,3 +1,23 @@
-<p>
-  header works!
-</p>
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">GB Wiki</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleCollapse()" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" [class.collapse]="isCollapsed" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <div class="form-inline mt-2 mt-md-0">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-secondary" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
